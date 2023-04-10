@@ -1,0 +1,223 @@
+:root{
+    --red: #ff3434;
+    --yellow: #fff507;
+    --light-red: #fd5a57;
+    --white: #ffffff;
+    --bkcolor: #e5ff0042;
+    --cbkcolor: #1b103f;
+    --text: merriweather;
+    --para: poppins;
+    --grey: #7e7e7e;
+    --dark-bg: #1f2434;
+    --black: #000;
+}
+/* top-nav css */
+body{
+    font-family: var(--text);
+}
+.top-nav{
+    background-color: var(--red);
+    height: 28px;
+}
+.top-navbar .info ul li{
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 14px;
+}
+.top-navbar .info ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--text);
+    font-size: 12px;
+}
+.top-navbar .info ul li::after{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    width: 1px;
+    height: 14px;
+    background: rgba(255,255,255,.3);
+    content: '';
+}
+/* Middle bar css */
+.logo-img{
+    width: 240px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.user-Action{
+    align-self: center;
+}
+.login-content{
+    position: relative;
+    padding-right: 30px;
+}
+.login-content::after{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    width: 1px;
+    height: 24px;
+    background: rgba(0,0,0,0.2);
+    content: '';
+}
+.login-context{
+    padding-top: 0px;
+    padding-left: 0px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.login-icon i{
+    padding-top: 8px;
+    font-size: 25px;
+}
+.second-row{
+    background-color: var(--bkcolor);
+    font-family: var(--text);
+}
+/* dropdown status */
+.dropdown{
+    position: relative;
+    z-index: 1;
+}
+.dropdown-content{
+    position: absolute;
+    z-index: 20000;
+    top: 100%;
+    right:32%;
+    background-color: var(--white);
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 12px;
+}
+.dropdown:hover .dropdown-content{
+    visibility: unset;
+}
+/* navbar */
+.navbar{
+    background-color: var(--white);
+    z-index: 0!important;
+}
+/* footer */
+.footer{
+    background-color: var(--red)!important;
+    color: var(--white);
+    text-align: center;
+    margin-top: 112px;
+    font-size: 12px;
+    vertical-align: middle;
+    font-family: oswald;
+    padding: 0px!important;
+    background-color: var(--cbkcolor)!important;
+}
+/* footer-info */
+.footer-info{
+    background-color: var(--red);
+    padding: 32px 96px 24px 96px;
+}
+/* link-logo */
+.link-logo a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.logo-back-circle{
+    position: relative;z-index: 0;
+}
+.logo-back-circle::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--black);
+    top: -25%;
+    left: -80%;
+}
+
+/* email-box */
+.text-box{
+    border-bottom:1px solid var(--dark-bg);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: var(--red);
+    width: 50%;
+    color: var(--white);
+}
+.aeroplane{
+    margin-left: -12px;
+}
+
+/* main footer */
+.footer-menu{
+    text-align: left;
+    width: 75%;
+    padding: 42px 0px;
+    font-size: 16px;
+}
+.footer-head{
+    padding-bottom: 16px;
+}
+.footer-lists{
+    display: flex;
+}
+.footer-lists ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.footer-lists a{
+    text-decoration: none;
+    color: var(--white);
+}
+.footer-link-one{
+    padding-right: 150px;
+}
+.footer-lists ul li{
+    padding-bottom: 16px;
+}
+/* footer icons */
+.f-img{
+    padding-bottom: 6px;
+    width: 90%;
+    filter:brightness(0.8) sepia(1) saturate(0.15);
+    transition: 0.8s ease-in-out;
+}
+.f-img:hover{
+    filter: none;
+}
+/* footer text */
+.f-text{
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: 100;
+    line-height: 24px;
+}
+.f-icon{
+    padding-top: 20px;
+}
+.f-icon i:hover,
+.footer-lists li:hover a{
+    color: var(--red);
+}
+
+/* below the footer */
+
+.below-footer,.left-shift{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.middle-shift{
+    padding-left: 40px;
+}
